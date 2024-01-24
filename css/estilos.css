@@ -17,6 +17,9 @@ body{
     text-rendering: optimizeSpeed; /* renderice fuentes de forma más rápida */
     line-height: 1.5;
 }
+#popup{
+    display: none;
+}
 ul, ol{
     list-style: none;
 }
@@ -48,7 +51,7 @@ form, input, select, textarea, button, label{
 /* Definición Variables
  definimos familia de fuente que voy a utilizar */
 :root{
-    --color-principal: #FFFFFF;
+    --color-principal:#FFFFFF;
     --color-secondary: #77b95e;
 
     --color-background: #F2F7F9;
@@ -85,7 +88,12 @@ h1,h2,h3,h4,h5,h6{
     background-color: transparent;
     color: var(--color-icons);
 }
-
+#volverArriba{
+    background: transparent;
+    border: none;
+    margin-top: 1rem;
+    
+}
 /* imagen de fondo */
 body{
     background-image: url("../img/fondo.png");
