@@ -2,13 +2,13 @@ $(document).ready(() => {
 
     $('#date').datepicker();
 
-
+    $('#acordeon').tabs();
 
     $('#oscuro').click(() => {
         sessionStorage.setItem('modoNoche', !$(':root').hasClass('modo_oscuro'));
-        cambiarTema();
+        modoOscuro();
     });
-    cambiarTema();
+    modoOscuro();
     
 
     $('#volverArriba').on('click', function () {
@@ -41,7 +41,7 @@ $(document).ready(() => {
         $('.user-info__job').slideDown(600);
     });
 });
-const cambiarTema = () => {
+let modoOscuro = () => {
         if (!sessionStorage.getItem('modoNoche') || sessionStorage.getItem('modoNoche') === 'false') {
             $(':root').removeClass('modo_oscuro');
             $('#oscuro i').addClass('fa-moon').removeClass('fa-sun');

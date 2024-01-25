@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Portafolio - Fernando J Fernández Trujillo</title>
-    <link rel="icon" type="image/png" href="./img/icono.png" />
+    <link rel="icon" type="image/png" href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_161610000000000001/attachments/76935/logo%20azul%20vertical%20%252B%20MEDAC.png"/>
     <!-- estilos -->
     <link rel="stylesheet" href="fonts/fontawesome-free-6.1.2-web/css/all.css">
     <link rel="stylesheet" href="fonts/poppins/poppins.css">
@@ -32,7 +32,7 @@
                         <!-- aquí iría la sombra -->
                     </div>
                     <h2 class="user-info__name">Fernando J Fernández Trujillo</h2>
-                    <h4 class="user-info__job">Docente - Desarrollador Web</h4>
+                    <h4 class="user-info__job">Estudiante - Desarrollador Web</h4>
                 </div>
                 <!-- menú de navegación -->
                 <nav class="layout__menu">
@@ -63,8 +63,8 @@
                         </li>
                         <li class="menu__option">
                             <a href="blog.html" class="menu__link menu__link--active">
-                                <i class="menu__icon fa-solid fa-book"></i>
-                                <span class="menu__overlay">Blog</span>
+                                <i class="menu__icon fa-solid fa-code"></i>
+                                <span class="menu__overlay">Proyectos</span>
                             </a>
                         </li>
                         <li class="menu__option">
@@ -115,8 +115,91 @@
         </aside>
 
         <!-- contenido principal -->
-        <!-- <main class="layout__content">
-        </main> -->
+        <main class="layout__content">
+            <section class="content__page content__portafolio">
+              <header class="portafolio__header">
+                <h1 class="portafolio__title">Mis Proyectos</h1>
+              </header>
+              <div id="acordeon">
+                <nav class="portfolio__navbar">
+                  <ul class="portfolio__menu">
+                    <li class="portfolio_option portfolio__option--active">
+                      <a href="#acordeon-1" class="portfolio__link">Proyecto 1</a>
+                    </li>
+                    <li class="portfolio_option">
+                      <a href="#acordeon-2" class="portfolio__link">Proyecto 2</a>
+                    </li>
+                    <li class="portfolio_option">
+                      <a href="#acordeon-3" class="portfolio__link">Proyecto 3</a>
+                    </li>
+                    <li class="portfolio_option">
+                      <a href="#acordeon-4" class="portfolio__link">Proyecto 4</a>
+                    </li>
+                  </ul>
+                </nav>
+                <section class="portfolio__gallery">
+                  <figure class="gallery__item" id="acordeon-1">
+                    <div class="gallery__container-image">
+                      <a href="#" class="gallery__link">
+                        <img src="https://www.coolmathgames.com/sites/default/files/Snake_OG-logo.jpg" alt="" class="gallery__image" />
+                      </a>
+                    </div>
+                    <figcaption class="gallery__title">
+                      Serpiente en JavaScript
+                    </figcaption>
+                    <span class="gallery__category">Serpiente en JavaScript</span>
+                    <p class="gallery__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dicta, doloribus vel. Eaque maxime cupiditate voluptatum vero,
+                      iste tempore velit officia?
+                    </p>
+                  </figure>
+                  <figure class="gallery__item" id="acordeon-2">
+                    <div class="gallery__container-image">
+                      <a href="#" class="gallery__link">
+                        <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/07/28/16905463193747.png" alt="" class="gallery__image" />
+                      </a>
+                    </div>
+                    <figcaption class="gallery__title">Tetris</figcaption>
+                    <span class="gallery__category">Tetris</span>
+                    <p class="gallery__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dicta, doloribus vel. Eaque maxime cupiditate voluptatum vero,
+                      iste tempore velit officia?
+                    </p>
+                  </figure>
+                  <figure class="gallery__item" id="acordeon-3">
+                    <div class="gallery__container-image">
+                      <a href="#" class="gallery__link">
+                        <img src="https://img.freepik.com/vector-premium/dibujos-animados-carreras-caballos_162786-24.jpg" alt="" class="gallery__image" />
+                      </a>
+                    </div>
+                    <figcaption class="gallery__title">Carrera de caballos en Python</figcaption>
+                    <span class="gallery__category">Carrera de caballos en Python</span>
+                    <p class="gallery__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dicta, doloribus vel. Eaque maxime cupiditate voluptatum vero,
+                      iste tempore velit officia?
+                    </p>
+                  </figure>
+                  <figure class="gallery__item" id="acordeon-4">
+                    <div class="gallery__container-image">
+                      <a href="#" class="gallery__link">
+                        <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/04/pac-man-2682107.jpg?tf=3840x" alt="" class="gallery__image" />
+                      </a>
+                    </div>
+                    <figcaption class="gallery__title">Pacman en java</figcaption>
+                    <span class="gallery__category">Pacman en java</span>
+                    <p class="gallery__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dicta, doloribus vel. Eaque maxime cupiditate voluptatum vero,
+                      iste tempore velit officia?
+                    </p>
+                  </figure>
+                </section>
+              </div>
+            </section>
+          </main>
     </div>
 </body>
 </html>

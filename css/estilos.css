@@ -72,7 +72,6 @@ form, input, select, textarea, button, label{
     --color-secondary: #a9a9a9;
 
     --color-background: rgb(158, 157, 157);
-    /* --color-transparent: transparent; */
 
     --color-icons: #B5B6B7;
     --color-title: #FFFFFF;
@@ -83,8 +82,6 @@ form, input, select, textarea, button, label{
     --color-company: #A5A6A7;
     --color-textarea:lightgray;
     --color-letra:black;
-
-
 
 }
 
