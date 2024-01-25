@@ -64,6 +64,28 @@ form, input, select, textarea, button, label{
 
     --color-border-reviews: #E5E6E7;
     --color-company: #A5A6A7;
+    --color-textarea:white;
+    --color-letra:black;
+}
+:root.modo_oscuro{
+    --color-principal:#1a1110;
+    --color-secondary: #a9a9a9;
+
+    --color-background: rgb(158, 157, 157);
+    /* --color-transparent: transparent; */
+
+    --color-icons: #B5B6B7;
+    --color-title: #FFFFFF;
+    --color-subtitle: #FFFFFF;
+    --color-text: #FFFFFF;
+
+    --color-border-reviews: #E5E6E7;
+    --color-company: #A5A6A7;
+    --color-textarea:lightgray;
+    --color-letra:black;
+
+
+
 }
 
 /* Estilos Generales */
@@ -83,6 +105,7 @@ h1,h2,h3,h4,h5,h6{
     color: --var(--color-title);
 }
 
+
 #oscuro {
     border: 0;
     background-color: transparent;
@@ -91,8 +114,22 @@ h1,h2,h3,h4,h5,h6{
 #volverArriba{
     background: transparent;
     border: none;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    float: right;
     
+}
+#botonEnviar{
+    color:var(--color-letra); 
+    background-color:var(--color-textarea);
+}
+textarea{
+    background-color:var(--color-textarea);
+    color:var(--color-letra); 
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+textarea::placeholder{
+    color: var(--color-letra);
 }
 /* imagen de fondo */
 body{
