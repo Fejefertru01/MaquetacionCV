@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Curriculum - Fernando J Fernández Trujillo</title>
-    <link rel="icon" type="image/png" href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_161610000000000001/attachments/76935/logo%20azul%20vertical%20%252B%20MEDAC.png"/>
+    <link rel="icon" type="image/png"
+        href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_161610000000000001/attachments/76935/logo%20azul%20vertical%20%252B%20MEDAC.png" />
     <!-- estilos -->
     <link rel="stylesheet" href="fonts/fontawesome-free-6.1.2-web/css/all.css">
     <link rel="stylesheet" href="fonts/poppins/poppins.css">
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/responsive.css">    
-    
+    <link rel="stylesheet" href="css/responsive.css">
+
     <title>Maquetación Proyecto CV</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </head>
+
 <body>
     <div id="popup" title="Certificados">
-        No lo tengo 
+        No lo tengo
     </div>
     <!-- layout principal. Usamos metodología BEM -->
     <div class="layout">
+            <div class="burguer">
+                <button class="hamburger">&#9776;</button>
+                <button class="cross">&#735;</button>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="sobre-mi.html">
+                        <li>Sobre mí</li>
+                    </a>
+                    <a href="curriculum.html">
+                        <li>Curriculum</li>
+                    </a>
+                    <a href="portafolio.html">
+                        <li>Aficiones</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Proyectos</li>
+                    </a>
+                    <a href="contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                    <a class="oscuro">
+                        <li>
+                        <i class="fa-solid fa-moon fa-2xl"></i>
+                            <span class="menu__overlay" id="cambiarSpan">Modo oscuro</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
         <!-- barra lateral (info usuario). -->
         <aside class="layout__aside">
             <section class="aside__user-info">
@@ -65,7 +101,7 @@
                             </a>
                         </li>
                         <li class="menu__option">
-                            <a href="blog.html" class="menu__link menu__link--active">
+                            <a href="blog.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-code"></i>
                                 <span class="menu__overlay">Proyectos</span>
                             </a>
@@ -77,10 +113,10 @@
                             </a>
                         </li>
                         <li class="menu__option">
-                            <button id="oscuro"><i class="fa-solid fa-moon fa-2xl oscuro"></i>
-                            <span class="menu__overlay" id="cambiarSpan">Modo oscuro</span>
-                        </a>
-                    </li>
+                            <a class="oscuro"><i class="fa-solid fa-moon fa-2xl"></i>
+                                <span class="menu__overlay" id="cambiarSpan">Modo oscuro</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -102,7 +138,7 @@
                                 <i class="social__icon fa-brands fa-instagram"></i>
                             </a>
                         </li>
-                        
+
                     </ul>
                 </div>
 
@@ -112,7 +148,7 @@
                 </div>
 
                 <!-- pié de página -->
-                <footer class="user-info__footer"> 
+                <footer class="user-info__footer">
                     &copy; 2024 Fernando J Fernández Trujillo - Web
                 </footer>
             </section>
@@ -140,7 +176,8 @@
                                 </div>
                                 <div class="timeline__description">
                                     <h3 class="timeline__title">Ciclo Superior - Desarrollo de Aplicaciones Web</h3>
-                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Odit nihil fuga harum ut, recusandae saepe natus.</p>
                                 </div>
                             </article>
                             <article class="timelines__timeline">
@@ -152,7 +189,8 @@
                                 </div>
                                 <div class="timeline__description">
                                     <h3 class="timeline__title">Bachillerato Tecnológico</h3>
-                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Odit nihil fuga harum ut, recusandae saepe natus.</p>
                                 </div>
                             </article>
                         </div>
@@ -170,7 +208,8 @@
                                 </div>
                                 <div class="timeline__description">
                                     <h3 class="timeline__title">Lorem Ipsun</h3>
-                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Odit nihil fuga harum ut, recusandae saepe natus.</p>
                                 </div>
                             </article>
                             <article class="timelines__timeline">
@@ -182,7 +221,8 @@
                                 </div>
                                 <div class="timeline__description">
                                     <h3 class="timeline__title">Lorem Ipsum</h3>
-                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Odit nihil fuga harum ut, recusandae saepe natus.</p>
                                 </div>
                             </article>
                         </div>
@@ -308,4 +348,5 @@
         </main>
     </div>
 </body>
+
 </html>

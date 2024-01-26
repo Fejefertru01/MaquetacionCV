@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Portafolio - Fernando J Fernández Trujillo</title>
-    <link rel="icon" type="image/png" href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_161610000000000001/attachments/76935/logo%20azul%20vertical%20%252B%20MEDAC.png"/>
+    <link rel="icon" type="image/png"
+        href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_161610000000000001/attachments/76935/logo%20azul%20vertical%20%252B%20MEDAC.png" />
     <!-- estilos -->
     <link rel="stylesheet" href="fonts/fontawesome-free-6.1.2-web/css/all.css">
     <link rel="stylesheet" href="fonts/poppins/poppins.css">
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/loader.css">
-    <link rel="stylesheet" href="css/responsive.css">    
-    
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 
     <title>Maquetación Proyecto CV</title>
 </head>
+
 <body>
     <!-- layout principal. Usamos metodología BEM -->
     <div class="layout">
+            <div class="burguer">
+                <button class="hamburger">&#9776;</button>
+                <button class="cross">&#735;</button>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="sobre-mi.html">
+                        <li>Sobre mí</li>
+                    </a>
+                    <a href="curriculum.html">
+                        <li>Curriculum</li>
+                    </a>
+                    <a href="portafolio.html">
+                        <li>Aficiones</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Proyectos</li>
+                    </a>
+                    <a href="contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                    <a class="oscuro">
+                        <li>
+                        <i class="fa-solid fa-moon fa-2xl"></i>
+                            <span class="menu__overlay" id="cambiarSpan">Modo oscuro</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
         <!-- barra lateral (info usuario). -->
         <aside class="layout__aside">
             <section class="aside__user-info">
@@ -64,7 +100,7 @@
                             </a>
                         </li>
                         <li class="menu__option">
-                            <a href="blog.html" class="menu__link menu__link--active">
+                            <a href="blog.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-code"></i>
                                 <span class="menu__overlay">Proyectos</span>
                             </a>
@@ -76,10 +112,10 @@
                             </a>
                         </li>
                         <li class="menu__option">
-                            <button id="oscuro"><i class="fa-solid fa-moon fa-2xl oscuro"></i>
-                            <span class="menu__overlay" id="cambiarSpan">Modo oscuro</span>
-                        </a>
-                    </li>
+                            <a class="oscuro"><i class="fa-solid fa-moon fa-2xl"></i>
+                                <span class="menu__overlay" id="cambiarSpan">Modo oscuro</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -110,7 +146,7 @@
                 </div>
 
                 <!-- pié de página -->
-                <footer class="user-info__footer"> 
+                <footer class="user-info__footer">
                     &copy; 2024 Fernando J Fernández Trujillo - Web
                 </footer>
             </section>
@@ -148,21 +184,25 @@
                             <span class="loader"></span>
                         </div>
                         <header class="contact__form-header">
-                            <h3 class="form-header__subtitle">¿ Cómo puedo <span class="subtitle__color">ayudarte</span> ?</h3>
+                            <h3 class="form-header__subtitle">¿ Cómo puedo <span class="subtitle__color">ayudarte</span>
+                                ?</h3>
                         </header>
                         <form action="" class="contact__form">
                             <div class="form__container">
                                 <section class="form__left">
                                     <div class="form__group">
-                                        <input type="text" class="form__input" name="name" required placeholder="Nombre">
+                                        <input type="text" class="form__input" name="name" required
+                                            placeholder="Nombre">
                                         <label for="name" class="form__label">Nombre</label>
                                     </div>
                                     <div class="form__group">
-                                        <input type="email" class="form__input" name="email" required placeholder="Email">
+                                        <input type="email" class="form__input" name="email" required
+                                            placeholder="Email">
                                         <label for="email" class="form__label">Email</label>
                                     </div>
                                     <div class="form__group">
-                                        <input type="text" class="form__input" name="subject" required placeholder="Asunto">
+                                        <input type="text" class="form__input" name="subject" required
+                                            placeholder="Asunto">
                                         <label for="subject" class="form__label">Asunto</label>
                                     </div>
                                 </section>
@@ -172,7 +212,8 @@
                                         <label class="form__label">Fecha</label>
                                     </div>
                                     <div class="form__group">
-                                        <textarea class="form__input form__input--textarea" name="message" required placeholder="Mensaje"></textarea>
+                                        <textarea class="form__input form__input--textarea" name="message" required
+                                            placeholder="Mensaje"></textarea>
                                         <label for="message" class="form__label">Mensaje</label>
                                     </div>
                                 </section>
@@ -187,4 +228,5 @@
     <!-- propiedad defer para que el script se cargue cuando el html se haya cargado -->
     <script src="js/map.js" defer></script>
 </body>
+
 </html>

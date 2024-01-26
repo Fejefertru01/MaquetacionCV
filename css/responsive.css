@@ -28,6 +28,9 @@
         position: static; /* posicionamiento normal */
     }
     /* cambiamos la visión para que se expanda al 100% de la pantalla y que únicamente sea visible la parte de contenido en nuestro Grid Areas */
+    .burguer{
+        display: block;
+    }
     .layout{
         width: 100%;
         height: 100%;
